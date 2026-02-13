@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Accueil</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body onload="loadDashboard()">
+
+<div class="container">
+  <h2>Tableau de bord</h2>
+
+  <p>Utilisateur : <span id="userPhone"></span></p>
+  <p>Solde : <strong id="balance"></strong> FC</p>
+
+  <button onclick="location.href='products.html'">Produits</button>
+  <button onclick="location.href='recharge.html'">Recharger</button>
+  <button onclick="location.href='withdraw.html'">Retrait</button>
+  <button onclick="location.href='team.html'">Parrainage</button>
+  <button onclick="location.href='history.html'">Historique</button>
+  <button onclick="logout()">Déconnexion</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
