@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Retrait</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body onload="protectPage()">
+
+<div class="container">
+  <h2>Retrait</h2>
+
+  <p>Minimum : 5 000 FC</p>
+  <p>Délai : 1 à 6 heures</p>
+
+  <input id="amount" type="number" placeholder="Montant à retirer">
+  <button onclick="withdraw()">Retirer</button>
+
+  <p>⚠️ Si retard &gt; 6h, contactez le service client.</p>
+
+  <button onclick="location.href='dashboard.html'">Retour</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
