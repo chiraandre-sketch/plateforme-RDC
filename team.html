@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Parrainage</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body onload="protectPage()">
+
+<div class="container">
+  <h2>Parrainage</h2>
+  <p>Ton lien :</p>
+  <p id="refLink"></p>
+
+  <button onclick="location.href='dashboard.html'">Retour</button>
+</div>
+
+<script src="script.js"></script>
+<script>
+document.getElementById("refLink").innerText =
+location.origin + "?ref=" + JSON.parse(localStorage.currentUser).phone;
+</script>
+</body>
+</html>
